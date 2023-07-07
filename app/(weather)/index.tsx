@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import Entypo from "@expo/vector-icons/Entypo";
 import Feather from "@expo/vector-icons/Feather";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
 import React from "react";
 
 const WeatherScreen = () => {
@@ -86,6 +87,52 @@ const WeatherScreen = () => {
               United Kindom
             </Text>
           </Text>
+
+          {/* weather image */}
+          <View className="flex-row justify-center bg-transparent">
+            <Image
+              className="h-52 w-52"
+              source={require("../../assets/extras/partlycloudy.png")}
+            />
+          </View>
+
+          {/* degree celcius */}
+          <View className="space-y-2 p-2 bg-transparent">
+            <Text className="text-center font-bold text-white text-6xl ml-5">
+              23&#176;
+            </Text>
+            <Text className="text-center text-white text-xl ml-5 tracking-widest">
+              Partly Cloudy
+            </Text>
+          </View>
+
+          {/* degree celcius */}
+          <View className="flex-row justify-between mx-4 bg-transparent">
+            <View className="flex-row space-x-2 items-center bg-transparent">
+              <Feather name="wind" size={25} color="white" />
+              <Text className="text-white font-semibold text-base">22Km/h</Text>
+            </View>
+
+            <View className="flex-row space-x-2 items-center bg-transparent">
+              <Feather name="droplet" size={25} color="white" />
+              <Text className="text-white font-semibold text-base">22%</Text>
+            </View>
+
+            <View className="flex-row space-x-2 items-center bg-transparent">
+              <Feather name="sun" size={25} color="white" />
+              <Text className="text-white font-semibold text-base">
+                6:05 PM
+              </Text>
+            </View>
+          </View>
+        </View>
+
+        {/* forcast for the next days */}
+        <View className="mb-2 space-x-3 bg-transparent">
+          <View className="flex-row items-center mx-5 space-x-2 bg-transparent">
+            <FontAwesome name="calendar" size={22} color="white" />
+            <Text className="text-white text-base">Daily Forcast</Text>
+          </View>
         </View>
       </View>
     </SafeAreaView>
