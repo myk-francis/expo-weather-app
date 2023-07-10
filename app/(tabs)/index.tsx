@@ -21,6 +21,12 @@ export default function TabOneScreen() {
       >
         <Text className=" font-semibold text-white">Weather</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => router.push("/(sob)")}
+        className="h-10 w-1/2 bg-green-400 flex items-center justify-center rounded-lg my-2"
+      >
+        <Text className=" font-semibold text-white">SOB</Text>
+      </TouchableOpacity>
     </View>
   );
 }
