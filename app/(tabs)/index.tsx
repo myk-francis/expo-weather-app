@@ -22,10 +22,16 @@ export default function TabOneScreen() {
         <Text className=" font-semibold text-white">Weather</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => router.push("/(sob)")}
+        onPress={() => router.push("/(mike)")}
         className="h-10 w-1/2 bg-green-400 flex items-center justify-center rounded-lg my-2"
       >
-        <Text className=" font-semibold text-white">SOB</Text>
+        <Text className=" font-semibold text-white">Puzzle Two</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => router.push("/(mike)/puzzletwo")}
+        className="h-10 w-1/2 bg-red-400 flex items-center justify-center rounded-lg my-2"
+      >
+        <Text className=" font-semibold text-white">Puzzle Two</Text>
       </TouchableOpacity>
     </View>
   );
