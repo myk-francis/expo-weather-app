@@ -19,7 +19,9 @@ export default function TabOneScreen() {
         onPress={() => router.push("/(weather)")}
         className="h-10 w-1/2 bg-blue-400 flex items-center justify-center rounded-lg"
       >
-        <Text className=" font-semibold text-white">Weather</Text>
+        <Text testID="weather-btn" className=" font-semibold text-white">
+          Weather
+        </Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => router.push("/(mike)")}
@@ -33,12 +35,12 @@ export default function TabOneScreen() {
       >
         <Text className=" font-semibold text-white">Puzzle Two</Text>
       </TouchableOpacity>
-      <TouchableOpacity
-        onPress={() => router.push("/(mike)/puzzlethree")}
+      {/* <TouchableOpacity
+        onPress={() => router.push("/(puzzlethree)")}
         className="h-10 w-1/2 bg-cyan-400 flex items-center justify-center rounded-lg my-2"
       >
         <Text className=" font-semibold text-white">Puzzle Three</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   );
 }
